@@ -1,0 +1,1325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Low‑Hanging Jobs — Get Hired Fast</title>
+  <meta name="description" content="Find the jobs nobody else is seeing — and get hired fast. Join the waitlist for Low‑Hanging Jobs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '3282784841874348');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3282784841874348&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    :root{
+      --clr-primary:#6D2E8F; /* plum-purple */
+      --clr-secondary:#7CB518; /* apple green */
+      --clr-accent:#FF6B35; /* clementine */
+      --clr-bg:#F9F9F9; /* soft white */
+      --clr-cta:#2F2F2F; /* charcoal black */
+      --radius:20px;
+      --shadow-soft:0 10px 30px rgba(0,0,0,.06);
+      --maxw:1200px;
+      --header-height: 72px;
+      --safe-area-inset-top: env(safe-area-inset-top, 0px);
+      --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    /* Global box-sizing and overflow guard */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    /* Prevent accidental horizontal scroll on small devices */
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    /* Enhanced Base Styles */
+    html{
+      scroll-behavior:smooth;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+    body{
+      margin:0;
+      background:var(--clr-bg);
+      color:#2F2F2F;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-top: var(--safe-area-inset-top);
+      padding-bottom: var(--safe-area-inset-bottom);
+    }
+    .headline{
+      font-family:Sora,Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      font-weight:700;
+      letter-spacing:-0.02em;
+    }
+    .container{
+  max-width:var(--maxw);
+  margin-inline:auto;
+  padding-inline:clamp(12px,4vw,28px);
+  width: 100%;
+  box-sizing: border-box;
+    }
+    /* Enhanced Button Styles */
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content: center;
+      gap:.5rem;
+      background:var(--clr-cta);
+      color:#fff;
+      border:none;
+      padding:.9rem 1.25rem;
+      border-radius:16px;
+      font-weight:600;
+      cursor:pointer;
+      box-shadow:var(--shadow-soft);
+      text-decoration:none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+      -webkit-appearance: none;
+      appearance: none;
+      margin: 0;
+      width: auto;
+      font-family: inherit;
+      font-size: inherit;
+      white-space: nowrap;
+      max-width: 100%;
+      overflow: hidden;
+    }
+    .btn:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(0,0,0,.12);
+    }
+    .btn:active {
+      transform: translateY(0);
+    }
+    .btn:focus-visible{
+      outline:3px solid var(--clr-secondary);
+      outline-offset:3px;
+    }
+    @media (hover: none) {
+      .btn:hover {
+        transform: none;
+        box-shadow: var(--shadow-soft);
+      }
+    }
+
+    /* Enhanced HERO */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: calc(100dvh - var(--header-height));
+      margin-top: calc(-1 * max(var(--safe-area-inset-top), 16px));
+      padding-top: max(var(--safe-area-inset-top), 16px);
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.98));
+      -webkit-box-pack: center;
+      justify-content: center;
+    }
+
+    .hero-backdrop {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .hero-backdrop::before, .hero-backdrop::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.1;
+      z-index: 0;
+      animation: pulse 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.1; }
+      100% { transform: scale(1.1); opacity: 0.08; }
+    }
+
+    .hero-backdrop::before {
+      width: 42rem;
+      height: 42rem;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+      background: linear-gradient(135deg, var(--clr-primary), var(--clr-accent));
+    }
+
+    .hero-backdrop::after {
+      width: 34rem;
+      height: 34rem;
+  left: 0;
+  bottom: 0;
+  transform: translate(-40%, 40%);
+      background: linear-gradient(135deg, var(--clr-secondary), var(--clr-primary));
+    }
+
+    @media (max-width: 640px) {
+      /* Use transforms instead of negative offsets so decorative backdrops
+         don't increase computed layout width and cause horizontal scroll */
+      .hero-backdrop::before {
+        right: 0;
+        top: 0;
+        width: 28rem;
+        height: 28rem;
+        transform: translate(40%, -40%);
+        filter: blur(60px);
+      }
+      .hero-backdrop::after {
+        left: 0;
+        bottom: 0;
+        width: 22rem;
+        height: 22rem;
+        transform: translate(-30%, 30%);
+        filter: blur(46px);
+      }
+      /* Constrain decorative SVGs so they don't overflow horizontally */
+      .decorative-side { display: none; }
+
+      /* Allow buttons to wrap and remain within container on small screens */
+      .btn {
+        white-space: normal;
+        overflow: visible;
+        font-size: clamp(15px, 3.8vw, 18px);
+      }
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-top: clamp(48px,10vw,100px);
+      padding-bottom: clamp(20px,6vw,40px);
+    }
+
+    .hero-content {
+      position: relative;
+      padding: clamp(20px, 4vw, 40px);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 
+        0 8px 32px rgba(0,0,0,0.03),
+        0 1px 2px rgba(0,0,0,0.02);
+    }
+
+    .hero h1 {
+      font-size: clamp(32px,5vw,60px);
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, var(--clr-primary), var(--clr-accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: gradientText 6s ease infinite;
+    }
+
+    @keyframes gradientText {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .hero h1 .highlight {
+      color: var(--clr-primary);
+      position: relative;
+      display: inline-block;
+      margin-top: 0.5em;
+    }
+
+    .hero h1 .highlight::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--clr-accent);
+      border-radius: 2px;
+      opacity: 0.3;
+    }
+
+    .hero-description {
+      max-width: 900px;
+      margin: 20px auto 0;
+      color: rgba(47,47,47,.9);
+      font-size: clamp(16px,2.2vw,20px);
+      line-height: 1.6;
+    }
+
+    .text-emphasis {
+      color: var(--clr-primary);
+      font-weight: 700;
+    }
+
+    .hero-cta {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+    }
+
+    .primary-btn {
+      background: var(--clr-primary);
+      transition: all 0.3s ease;
+    }
+
+    .primary-btn:hover {
+      background: var(--clr-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+
+    .btn-icon {
+      margin-right: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .primary-btn:hover .btn-icon {
+      transform: translateY(2px);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding-inline: max(12px, 4vw);
+        margin-inline: 0.5rem;
+      }
+
+      .hero-content {
+        padding: clamp(16px, 3vw, 24px);
+        margin: 0;
+        border-radius: calc(var(--radius) / 2);
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      /* Reduce top spacing so hero doesn't push content down on small screens */
+      .hero-inner { padding-top: clamp(12px, 6vw, 40px); padding-bottom: clamp(12px,4vw,24px); }
+      /* Ensure CTA buttons are contained */
+      .hero-cta .btn, .cta-section .btn, .cta-headline { max-width: 100%; box-sizing: border-box; overflow-wrap: anywhere; }
+      .hero-cta .btn { padding-left: 1rem; padding-right: 1rem; }
+    }
+
+    /* Enhanced BENEFITS */
+    .benefits{
+      padding-block:max(56px, 8vh);
+      position: relative;
+      z-index: 0;
+    }
+    .grid{
+      display:grid;
+      gap:clamp(20px, 3vw, 32px);
+      position: relative;
+      margin-bottom: clamp(80px, 10vw, 120px);
+    }
+    @media (min-width: 768px){
+      .grid{
+        grid-template-columns:repeat(3,1fr);
+      }
+    }
+    .card{
+      background:#fff;
+      border-radius:var(--radius);
+      padding:clamp(22px, 3vw, 32px);
+      border:1px solid rgba(0,0,0,.05);
+      box-shadow:var(--shadow-soft);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,.08);
+    }
+    .card h3{
+      margin:0 0 12px;
+      font-family:Sora,Inter,sans-serif;
+      color:var(--clr-primary);
+      font-size:clamp(18px, 2.2vw, 22px);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .center{text-align:center}
+
+    /* Enhanced WAITLIST FORM */
+    .form-wrap{
+      background:#fff;
+      border:1px solid rgba(0,0,0,.06);
+      box-shadow:var(--shadow-soft);
+      border-radius:28px;
+      padding:clamp(24px,4vw,40px);
+      position: relative;
+      /* allow inner form content to flow and not be clipped on narrow screens */
+  overflow: visible;
+  max-width: 100%;
+    }
+    .form-wrap::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--clr-primary), var(--clr-accent));
+    }
+    form{
+      display:grid;
+      gap:clamp(18px, 2.5vw, 24px);
+      margin-top:clamp(18px, 2.5vw, 24px);
+    }
+
+    /* Ensure option grids don't create collapsed rows on small screens */
+    .options {
+      grid-auto-rows: auto;
+    }
+
+    @media (max-width: 640px) {
+      /* Give extra bottom padding to avoid safe-area or fixed footers hiding the last fields */
+      .form-wrap {
+        padding-bottom: max(20px, calc(env(safe-area-inset-bottom) + 16px));
+        overflow-y: visible;
+      }
+      .actions { padding-bottom: 12px; }
+    }
+    label{
+      display:block;
+      font-size:clamp(14px, 1.6vw, 16px);
+      color:rgba(47,47,47,.85);
+      margin-bottom:8px;
+      font-weight: 500;
+    }
+    input[type="text"],
+    input[type="email"],
+    .text-input{
+      width:100%;
+      border:2px solid rgba(0,0,0,.08);
+      background:var(--clr-bg);
+      padding:clamp(14px, 1.8vw, 16px);
+      border-radius:14px;
+      font:inherit;
+      outline:none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    .text-input:hover {
+      border-color: rgba(0,0,0,.15);
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    .text-input:focus{
+      border-color: var(--clr-primary);
+      box-shadow:0 0 0 4px var(--clr-primary)15;
+    }
+    .muted{
+      color:rgba(47,47,47,.6);
+      font-size:clamp(12px, 1.4vw, 14px);
+    }
+    .required {
+      color: #e53935;
+      margin-left: 2px;
+    }
+    .error-message {
+      color: #e53935;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+    .options{
+      display:grid;
+      gap:clamp(10px, 1.5vw, 16px);
+    }
+    @media (min-width:640px){
+      .options{
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+    .check{
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+      background:var(--clr-bg);
+      border:2px solid rgba(0,0,0,.08);
+      padding:clamp(12px, 1.6vw, 16px);
+      border-radius:14px;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+      cursor: pointer;
+    }
+    .check:hover {
+      border-color: rgba(0,0,0,.15);
+      transform: translateY(-1px);
+    }
+    .check input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(0,0,0,.15);
+      border-radius: 6px;
+      margin: 0;
+      position: relative;
+      cursor: pointer;
+    }
+    .check input[type="checkbox"]:checked {
+      background: var(--clr-primary);
+      border-color: var(--clr-primary);
+    }
+    .check input[type="checkbox"]:checked::after {
+      content: "✓";
+      position: absolute;
+      color: white;
+      font-size: 14px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .sr-only{
+      position:absolute;
+      width:1px;
+      height:1px;
+      padding:0;
+      margin:-1px;
+      overflow:hidden;
+      clip:rect(0,0,0,0);
+      white-space:nowrap;
+      border:0;
+    }
+    .actions{
+      padding-top:clamp(12px, 2vw, 24px);
+    }
+    @media (max-width: 480px) {
+      .form-wrap {
+  border-radius: 20px;
+  margin-inline: 0;
+  padding-inline: max(12px, 4vw);
+      }
+    }
+
+    /* Enhanced CTA Section */
+    .cta-section {
+      position: relative;
+      padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px);
+      margin: clamp(80px, 8vw, 120px) auto;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.95));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: var(--radius);
+      max-width: min(100%, 800px);
+      overflow: visible;
+      z-index: 1;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: inherit;
+      pointer-events: none;
+    }
+
+    .decorative-pattern {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
+      width: min(240px, 80%);
+      height: auto;
+    }
+
+    .cta-headline {
+      font-size: clamp(24px, 4vw, 32px) !important;
+      line-height: 1.3;
+      margin: 0 auto;
+      max-width: 600px;
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(135deg, var(--clr-primary), var(--clr-accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      padding: 0.5em 1em;
+    }
+
+    .decorative-side {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 0;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    .decorative-side:hover {
+      opacity: 1;
+    }
+
+    .decorative-side.left {
+      left: 2%;
+    }
+
+    .decorative-side.right {
+      right: 2%;
+    }
+
+    .path-animated {
+      stroke-dasharray: 200;
+      stroke-dashoffset: 200;
+      animation: drawPath 3s ease-out forwards;
+    }
+
+    @keyframes drawPath {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .decorative-side circle {
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+      }
+    }
+
+    .cta-button {
+      position: relative;
+      z-index: 1;
+      background: var(--clr-accent);
+      font-size: clamp(16px, 2vw, 18px);
+      padding: clamp(12px, 2vw, 16px) clamp(20px, 3vw, 28px);
+    }
+
+    .cta-button:hover {
+      background: var(--clr-primary);
+    }
+
+    .btn-icon {
+      transition: transform 0.3s ease;
+    }
+
+    .cta-button:hover .btn-icon {
+      transform: translateY(2px);
+    }
+
+    .cta-note {
+      position: relative;
+      z-index: 1;
+      font-size: clamp(14px, 1.6vw, 16px);
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .cta-section {
+        margin-inline: clamp(16px, 4vw, 32px);
+        padding: clamp(32px, 5vw, 40px) clamp(16px, 3vw, 24px);
+      }
+      
+      .decorative-side svg {
+        width: 80px;
+        height: auto;
+      }
+      
+      .decorative-pattern {
+        width: 180px;
+        top: -16px;
+      }
+      
+      .decorative-side.left {
+        left: 0;
+      }
+      
+      .decorative-side.right {
+        right: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .cta-section {
+        margin-inline: 16px;
+        padding: 32px 20px;
+      }
+      
+      .decorative-pattern {
+        width: 140px;
+        top: -12px;
+      }
+      
+      .decorative-side {
+        opacity: 0.4;
+      }
+      
+      .cta-headline {
+        font-size: clamp(20px, 5vw, 24px) !important;
+      }
+      
+      .cta-button {
+        width: calc(100% - 32px);
+        margin: 0 16px;
+      }
+    }
+
+    /* Enhanced Footer */
+    footer {
+      padding: clamp(28px, 4vw, 40px) 0;
+      margin-top: clamp(40px, 6vw, 80px);
+      border-top: 1px solid rgba(0,0,0,.08);
+      background: #fff;
+    }
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      text-align: center;
+    }
+    footer .links {
+      display: flex;
+      gap: clamp(12px, 2vw, 20px);
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    footer a {
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+    footer a:hover {
+      transform: translateY(-1px);
+    }
+    .copyright {
+      margin: 0;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .footer-container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    /* Enhanced Reveal animations (reduced-motion friendly) */
+    .reveal{
+      opacity:0;
+      transform:translateY(20px);
+      transition:opacity .8s ease, transform .8s ease;
+    }
+    .reveal.in{
+      opacity:1;
+      transform:none;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        transition: opacity .4s ease-out;
+        transform: none;
+      }
+    }
+
+    /* Enhanced Utility Classes */
+    .mt-2{margin-top:.5rem}
+    .mt-3{margin-top:.75rem}
+    .mt-4{margin-top:1rem}
+    .mt-8{margin-top:2rem}
+    .pill{
+      display:inline-flex;
+      align-items: center;
+      padding:.35rem .75rem;
+      border-radius:999px;
+      font-size:clamp(12px, 1.4vw, 14px);
+      background:rgba(109,46,143,.12);
+      color:var(--clr-primary);
+      font-weight:600;
+      gap: 4px;
+    }
+    .pill::before {
+      content: '🔥';
+      font-size: 0.9em;
+    }
+
+    /* Mobile Optimizations */
+    @media (max-width: 480px) {
+      .container {
+        padding-inline: max(16px, 4vw);
+      }
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+      .hero h1 {
+        font-size: clamp(28px, 7vw, 32px);
+      }
+      .hero p {
+        font-size: clamp(14px, 4vw, 16px);
+      }
+    }
+
+    /* Toast Enhancement */
+    #toast {
+      position: fixed;
+      inset: auto 16px 16px auto;
+      background: var(--clr-cta);
+      color: #fff;
+      padding: clamp(12px, 2vw, 16px) clamp(16px, 3vw, 24px);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,.2);
+      opacity: 0;
+      transform: translateY(16px);
+      pointer-events: none;
+      transition: opacity .35s ease, transform .35s ease;
+      z-index: 1000;
+      max-width: 90vw;
+      text-align: center;
+      font-weight: 500;
+    }
+    @media (max-width: 480px) {
+      #toast {
+        left: 16px;
+        text-align: center;
+      }
+    }
+
+    /* Responsive Improvements */
+    @media (min-width: 1200px) {
+      .container {
+  padding-inline: max(32px, calc((100vw - var(--maxw)) / 2));
+      }
+    }
+
+    /* iOS Safe Area and Device Support */
+    @supports(padding: max(0px)) {
+      body {
+        padding-top: max(var(--safe-area-inset-top), 16px);
+        padding-bottom: max(var(--safe-area-inset-bottom), 16px);
+      }
+      #toast {
+        bottom: max(16px, var(--safe-area-inset-bottom));
+      }
+    }
+
+    /* iOS-specific fixes */
+    @supports (-webkit-touch-callout: none) {
+      .btn {
+        /* Prevents iOS button styling */
+        -webkit-appearance: none;
+        appearance: none;
+      }
+      
+      .hero {
+        /* Fix for iOS height issues */
+        min-height: -webkit-fill-available;
+      }
+
+      input, 
+      button {
+        /* Fix for iOS input zoom */
+        font-size: 16px !important;
+      }
+
+      .container {
+        /* Fix for iOS padding issues */
+        padding-left: max(16px, env(safe-area-inset-left));
+        padding-right: max(16px, env(safe-area-inset-right));
+      }
+    }
+
+    /* Processing Button States */
+    .btn:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      transform: none !important;
+    }
+
+    .processing-spinner {
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    /* Mobile polish: tighter spacing, contained CTAs, readable text */
+    @media (max-width: 640px) {
+      /* Prevent any accidental horizontal scroll and remove extra top safe-area padding */
+      html, body { padding-top: 0 !important; min-width: 0 !important; overflow-x: hidden !important; }
+
+      /* Keep the main container centered and never wider than the viewport */
+      .container { box-sizing: border-box; max-width: 100% !important; margin-inline: auto !important; padding-inline: max(12px, 4vw) !important; }
+
+      /* Reduce hero vertical footprint and make content feel closer to the top */
+      .hero {
+        min-height: auto;
+        padding-top: 8px !important;
+        padding-bottom: 12px !important;
+        margin-top: 0 !important;
+      }
+      .hero-inner { padding-top: 18px; padding-bottom: 18px; }
+      .hero-content { padding: 16px; border-radius: 14px; }
+      .hero h1 { font-size: clamp(22px, 6.8vw, 30px); line-height: 1.08; }
+      .hero-description { font-size: 15px; margin: 12px auto 0; }
+
+      /* CTA buttons: stack and fill but stay inside container */
+      .hero-cta { flex-direction: column; gap: 12px; align-items: center; }
+      .hero-cta .btn, .cta-section .btn, .btn {
+        width: 100%;
+        max-width: 520px;
+        padding: 12px 14px;
+        font-size: 16px;
+        border-radius: 12px;
+        white-space: normal;
+      }
+
+      /* Cards / grid: single column and reduced padding */
+      .grid { gap: 14px; }
+      .grid > article, .grid > blockquote { padding: 16px; }
+      .grid { grid-template-columns: 1fr; }
+      .card { border-radius: 14px; }
+
+      /* Constrain decorative backdrops and patterns so they don't push layout width */
+      .hero-backdrop, .decorative-pattern, .decorative-side { max-width: 100vw !important; left: 50% !important; right: 50% !important; transform: translateX(-50%) !important; }
+
+      /* Form: ensure inputs and options stack and are reachable */
+      .form-wrap { padding: 16px; border-radius: 14px; }
+      .options { display: grid; grid-template-columns: 1fr; gap: 10px; }
+      .actions { padding-top: 12px; }
+
+      /* Testimonials: single column cards */
+      .grid[style*="auto-fit"] { grid-template-columns: 1fr; }
+
+      /* Text sizing and spacing tweaks */
+      .muted { font-size: 14px; }
+      .headline { font-size: clamp(18px, 5.6vw, 22px); }
+      footer .container { padding-bottom: calc(env(safe-area-inset-bottom) + 16px); }
+      /* Testimonials: more readable on mobile */
+      .grid blockquote.card p { font-style: italic; font-size: 15px; margin: 0 0 0.75rem; }
+      .grid blockquote.card footer { font-size: 13px; opacity: 0.85; }
+      /* Inputs: clearer focus and easier tap targets */
+      input[type="text"], input[type="email"], .text-input {
+        padding: 14px 12px;
+        font-size: 16px;
+      }
+      input[type="text"]:focus, input[type="email"]:focus, .text-input:focus {
+        outline: none;
+        box-shadow: 0 4px 18px rgba(109,46,143,0.08);
+        border-color: var(--clr-primary);
+      }
+    }
+
+    /* Extra-small screens: simplify spacing and font sizes */
+    @media (max-width: 420px) {
+      .hero h1 { font-size: clamp(20px, 7.5vw, 26px); }
+      .hero-description { font-size: 14px; }
+      .hero-cta .btn, .cta-section .btn { padding: 10px 12px; font-size: 15px; }
+      .container { padding-inline: 12px; }
+      .card, .form-wrap { padding: 12px; }
+    }
+  </style>
+  <style>
+    /* Section header consistency */
+    .section-header {
+      font-family: Sora, Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      color: var(--clr-primary);
+      font-weight: 700;
+      font-size: clamp(20px, 3vw, 24px);
+      margin: 0 0 12px;
+    }
+
+    /* Testimonial slider */
+    .testimonial-slider { overflow: hidden; position: relative; padding: 12px 0; }
+    .testimonial-slider .slides { display: flex; gap: 12px; width: max-content; align-items: stretch; transition: transform 0.2s linear; }
+    .testimonial-slider .slide { min-width: 320px; max-width: 420px; flex: 0 0 auto; }
+    .testimonial-slider .slide p { margin: 0 0 0.5rem; }
+
+    /* Mobile: switch to swipeable scroll-snap carousel for better UX */
+    @media (max-width: 640px) {
+      .testimonial-slider { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-inline: 12px; }
+      .testimonial-slider .slides { width: auto; display: flex; gap: 12px; transform: none !important; }
+      .testimonial-slider .slide { min-width: 82%; max-width: 82%; flex: 0 0 auto; scroll-snap-align: center; }
+      .testimonial-slider { scroll-snap-type: x mandatory; }
+      .testimonial-slider .slides { align-items: stretch; }
+    }
+  </style>
+  <style>
+    /* Section helper for consistent spacing */
+    .section { padding-block: clamp(24px, 6vw, 48px); }
+  </style>
+</head>
+<body>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-backdrop"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1 class="headline">
+          <span class="text-gradient">Find the Jobs Nobody Else Is Seeing —</span> 
+          <span class="highlight">And Get Hired Fast</span>
+        </h1>
+        <p class="hero-description">
+          Every day, hundreds of easy-to-get remote jobs are posted in Facebook groups, Twitter feeds, Slack channels, and subreddits. But they disappear quickly — and most job seekers never see them.
+          <br> <strong class="text-emphasis">Low‑Hanging Jobs</strong> brings them all to one place — so you can apply first, skip the noise, and get hired faster.
+        </p>
+        <div class="hero-cta">
+          <p class="mt-3"><span class="pill">Early access is limited</span></p>
+          <p class="mt-3">
+            <a class="btn primary-btn" href="#waitlist" aria-describedby="cta-help">
+              <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 3V17M10 17L4 11M10 17L16 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Join the Waitlist Now — Beat the Crowd to Easy Jobs
+            </a>
+          </p>
+        </div>
+      </div>
+      <span id="cta-help" class="sr-only">Takes you to the waitlist form section</span>
+    </div>
+  </header>
+
+  <!-- WHO THIS IS FOR / BENEFITS -->
+  <main>
+  <section class="container section">
+  <h2 class="section-header">Why Low‑Hanging Jobs?</h2>
+      <p>Find the jobs hiding in communities other platforms ignore — delivered to one dashboard so you can apply fast and skip the noise.</p>
+
+      <div class="benefits mt-4">
+        <div class="grid">
+          <article class="card reveal">
+            <h3>Easy Jobs, No Gatekeepers</h3>
+            <p>No complex resumes. No 5‑round interviews. Just real jobs posted by small businesses, startups, and founders who need help — <strong>now</strong>.</p>
+          </article>
+          <article class="card reveal" style="transition-delay:.06s">
+            <h3>Be the First to Apply</h3>
+            <p>Opportunities sorted by how <em>fresh</em> they are. See what was posted 3 hours ago — not last week.</p>
+          </article>
+          <article class="card reveal" style="transition-delay:.12s">
+            <h3>Less Competition, More Hires</h3>
+            <p>While others crowd LinkedIn, Indeed, Upwork and Fiverr, you get access to jobs hiding in communities they’re ignoring.</p>
+          </article>
+          <article class="card reveal" style="transition-delay:.18s">
+            <h3>Curated for You</h3>
+            <p>Set your skills and roles. See only the jobs that matter to you — fewer distractions, higher signal.</p>
+          </article>
+          <article class="card reveal" style="transition-delay:.24s">
+            <h3>One Dashboard, Every Opportunity</h3>
+            <p>No more scrolling through 50 Facebook groups or 10 Slack channels. We bring all the opportunities to one simple place.</p>
+          </article>
+        </div>
+      </div>
+
+      <section style="margin-top:2.5rem">
+  <h2 class="section-header">Tired of Getting Ghosted? Applying to 100 Jobs and Hearing Nothing?</h2>
+        <p>Most platforms are bloated — 500 people apply to every job, and companies ghost 95% of them. But behind the scenes, there’s another stream of jobs — ones posted by people who aren’t hiring through traditional platforms.</p>
+        <p>They’re posting in groups. Twitter threads. Slack channels. Facebook groups. But unless you're glued to your screen all day, you’ll miss them.</p>
+        <p><strong>Low‑Hanging Jobs fixes that.</strong> We scan hidden corners of the internet and pull those opportunities into one clean, simple dashboard. You don’t need to scroll. You don’t need to guess. You just log in and apply early — it’s like job hunting with a cheat code.</p>
+      </section>
+
+      <section class="center mt-6">
+        <p class="muted">Already <strong>300+</strong> job hunters have joined our early waitlist — freelancers, remote workers, junior devs, marketers, virtual assistants, and people tired of rejection who want to try smarter.</p>
+      </section>
+
+     
+  </section>
+
+  <!-- WAITLIST FORM -->
+  <section id="waitlist" class="container section" aria-labelledby="waitlist-title">
+      <div class="form-wrap reveal">
+  <h2 id="waitlist-title" class="section-header">Join The Waitlist</h2>
+        <p class="muted" style="margin:0 0 1.5rem">Be the first to get instant access when we launch!</p>
+
+        <form id="wl-form" novalidate>
+          <!-- 1. Name -->
+          <div>
+            <label for="name">1. Name <span class="required">*</span></label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required>
+            <div class="muted" id="err-name" role="alert" style="display:none">Please enter your name.</div>
+          </div>
+          <!-- 2. Email -->
+          <div>
+            <label for="email">2. Email <span class="required">*</span></label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <div class="muted" id="err-email" role="alert" style="display:none">Please enter a valid email.</div>
+          </div>
+          <!-- 3. Price (open-ended, $) -->
+          <div>
+            <label for="price">3. How much would you honestly be willing to pay monthly for easy, daily access to fresh job opportunities that match your skills? <span class="required">*</span> <span class="muted">(Currency: $)</span></label>
+            <input id="price" name="price" type="text" inputmode="decimal" placeholder="e.g. 9, 15, 29" required>
+            <p class="muted mt-2">Be as honest as possible — this helps us price fairly and sustainably.</p>
+            <div class="muted" id="err-price" role="alert" style="display:none">Please enter a valid number (e.g., 9, 15, 29).</div>
+          </div>
+          <!-- 4. Success goals (multi-select with Other) -->
+          <fieldset>
+            <legend class="sr-only">4. Success goals</legend>
+            <label>4. What would success with this platform look like for you? <span class="required">*</span> <span class="muted">(Select one or more)</span></label>
+            <div id="err-goals" class="muted error-message" role="alert" style="display:none">Please select at least one goal.</div>
+            <div class="options mt-2">
+              <!-- Generated via HTML for clarity/accessibility -->
+              <label class="check"><input type="checkbox" name="goals" value="Land a remote freelance gig"> <span>Land a remote freelance gig</span></label>
+              <label class="check"><input type="checkbox" name="goals" value="Get a part-time side hustle"> <span>Get a part-time side hustle</span></label>
+              <label class="check"><input type="checkbox" name="goals" value="Secure my first online job"> <span>Secure my first online job</span></label>
+              <label class="check"><input type="checkbox" name="goals" value="Replace my 9–5 job"> <span>Replace my 9–5 job</span></label>
+              <label class="check"><input type="checkbox" name="goals" value="Earn quick income while job hunting"> <span>Earn quick income while job hunting</span></label>
+              <label class="check"><input type="checkbox" name="goals" value="Build consistent income with short-term contracts"> <span>Build consistent income with short-term contracts</span></label>
+              <div>
+                <label class="check"><input id="goal-other" type="checkbox" name="goals" value="Other"> <span>Other</span></label>
+                <input class="text-input mt-2" type="text" id="goal-other-text" name="goal_other_text" placeholder="Optional: tell us more" aria-label="Describe other success goal" disabled>
+              </div>
+            </div>
+          </fieldset>
+          <!-- 5. Challenges (multi-select) -->
+          <fieldset>
+            <legend class="sr-only">5. Challenges</legend>
+            <label>5. What’s been your biggest challenge with finding jobs online? <span class="muted">(Select all that apply)</span></label>
+            <div class="options mt-2">
+              <label class="check"><input type="checkbox" name="challenges" value="Too many scams or low-paying gigs"> <span>Too many scams or low-paying gigs</span></label>
+              <label class="check"><input type="checkbox" name="challenges" value="I don’t know where to look"> <span>I don’t know where to look</span></label>
+              <label class="check"><input type="checkbox" name="challenges" value="I apply but never hear back"> <span>I apply but never hear back</span></label>
+              <label class="check"><input type="checkbox" name="challenges" value="Jobs require too much experience"> <span>Jobs require too much experience</span></label>
+              <label class="check"><input type="checkbox" name="challenges" value="I don’t have time to search every day"> <span>I don’t have time to search every day</span></label>
+            </div>
+          </fieldset>
+
+          <div class="actions">
+            <button class="btn" type="submit" id="submit-button">
+              <svg class="btn-icon processing-spinner" width="20" height="20" viewBox="0 0 20 20" fill="none" style="display: none;">
+                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" stroke-dasharray="40" />
+              </svg>
+              <span class="button-text">Join the Waitlist Now — Beat the Crowd to Easy Jobs</span>
+            </button>
+            <p class="muted mt-2">We respect your time and inbox. Unsubscribe anytime.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <!-- TESTIMONIALS SLIDER (moved below form) -->
+  <section class="container section" aria-label="Testimonials">
+      <h3 class="section-header" style="margin-bottom:0.75rem">What users are saying</h3>
+      <div class="testimonial-slider" id="testimonial-slider">
+        <div class="slides">
+          <div class="slide card"> <p>“I applied to a role within 30 minutes of it being posted, and got hired the same day. Low‑Hanging Jobs just works.”</p><footer class="muted">— Aisha Bello, Virtual Assistant, Nigeria</footer> </div>
+          <div class="slide card"> <p>“I thought the jobs would be low-paying, but I landed a $3,000/month gig from a startup in New York through here.”</p><footer class="muted">— James Tucker, Web Developer, USA</footer> </div>
+          <div class="slide card"> <p>“What I love most is the speed. You don’t wait days to hear back — these founders reply fast. I’m in love.”</p><footer class="muted">— Zanele Mokoena, Social Media Manager, South Africa</footer> </div>
+          <div class="slide card"> <p>“I found two part-time contracts in one week — both from Facebook groups I’d never even heard of. This tool is genius.”</p><footer class="muted">— Luc Dubois, Customer Support Rep, France</footer> </div>
+          <div class="slide card"> <p>“I came across a part-time role that fits perfectly into my schedule. I wouldn’t have seen it if not for Low‑Hanging Jobs.”</p><footer class="muted">— Rasheed, Admin Assistant, India</footer> </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <nav class="links">
+        <a href="#waitlist" style="color:var(--clr-accent);text-decoration:none">Join the Waitlist</a>
+      </nav>
+      <p class="muted copyright">© <span id="year"></span> Low‑Hanging Jobs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" role="status" aria-live="polite" style="position:fixed;inset:auto 16px 16px auto;background:#111;color:#fff;padding:.8rem 1rem;border-radius:12px;box-shadow:var(--shadow-soft);opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .35s ease, transform .35s ease"></div>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Intersection Observer for reveal animations
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(!prefersReduced){
+      const obs = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target);} });
+      },{threshold:.18});
+      document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
+    }
+
+    // Other goal enable/disable
+    const otherCheck = document.getElementById('goal-other');
+    const otherInput = document.getElementById('goal-other-text');
+    otherCheck.addEventListener('change', ()=>{
+      otherInput.disabled = !otherCheck.checked;
+      if(!otherCheck.checked) otherInput.value = '';
+    });
+
+    // Simple form handling + validation
+    const form = document.getElementById('wl-form');
+    const toast = document.getElementById('toast');
+    const showToast = (msg)=>{
+      toast.textContent = msg; 
+      toast.style.opacity = 1; 
+      toast.style.transform = 'translateY(0)';
+      setTimeout(()=>{
+        toast.style.opacity = 0; 
+        toast.style.transform = 'translateY(8px)';
+      }, 3200);
+    };
+
+    function validateEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)}
+    function validatePrice(v){ return v && !isNaN(v) && Number(v) >= 0; }
+
+    const submitButton = document.getElementById('submit-button');
+    const buttonText = submitButton.querySelector('.button-text');
+    const processingSpinner = submitButton.querySelector('.processing-spinner');
+    
+    function setProcessingState(isProcessing) {
+      submitButton.disabled = isProcessing;
+      processingSpinner.style.display = isProcessing ? 'inline-block' : 'none';
+      buttonText.textContent = isProcessing ? 'Processing...' : 'Join the Waitlist Now — Beat the Crowd to Easy Jobs';
+    }
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // clear errors
+      ['err-name','err-email','err-price','err-goals','err-challenges'].forEach(id=>{
+        const el = document.getElementById(id);
+        if(el) el.style.display = 'none';
+      });
+
+      try {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const rawPrice = document.getElementById('price').value.trim();
+        const selectedGoals = Array.from(document.querySelectorAll('input[name="goals"]:checked')).map(i=>i.value);
+        const selectedChallenges = Array.from(document.querySelectorAll('input[name="challenges"]:checked')).map(i=>i.value);
+
+        let valid = true;
+        if(!name){ document.getElementById('err-name').style.display='block'; valid = false; }
+        if(!validateEmail(email)){ document.getElementById('err-email').style.display='block'; valid = false; }
+        if(!validatePrice(rawPrice)){ document.getElementById('err-price').style.display='block'; valid = false; }
+        if(selectedGoals.length === 0){ document.getElementById('err-goals').style.display='block'; valid = false; }
+        if(selectedChallenges.length === 0){ document.getElementById('err-challenges').style.display='block'; valid = false; }
+        
+        if(!valid) {
+          showToast("❌ Please fill in all required fields.");
+          return;
+        }
+
+        // Set processing state only after validation passes
+        setProcessingState(true);
+
+        const price = Number(rawPrice);
+        const goalOther = otherInput.disabled ? '' : otherInput.value.trim();
+
+        const payload = { 
+          name, 
+          email, 
+          price, 
+          goals: selectedGoals, 
+          goalOther, 
+          challenges: selectedChallenges, 
+          ts: new Date().toISOString() 
+        };
+
+        // Send to Google Apps Script
+        fetch('https://script.google.com/macros/s/AKfycbwbJMQhiCtCvMMAwPez6Y5CxroPdOevbJCXGyVDu_J99WHlQtoU3HTQMLXPlRXTmLk9/exec', {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload)
+        })
+        .then(() => {
+          // Redirect to thank you page (use relative path to support subpath hosting)
+          window.location.href = 'thank-you.html';
+          otherInput.disabled = true;
+          setProcessingState(false);
+          showToast("✅ Thanks! You're on the waitlist. We'll be in touch soon.");
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          if (typeof fbq !== 'undefined') {
+            fbq('track', 'CompleteRegistration');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          setProcessingState(false);
+          showToast("❌ Something went wrong. Please try again.");
+        });
+      } catch (error) {
+        console.error('Form Error:', error);
+        setProcessingState(false);
+        showToast("❌ Something went wrong. Please try again.");
+      }
+    });
+
+    // Testimonial slider: auto-scroll on desktop, swipe/scroll on mobile
+    (function(){
+      const wrap = document.getElementById('testimonial-slider');
+      if(!wrap) return;
+      const slidesEl = wrap.querySelector('.slides');
+      const isMobile = window.matchMedia('(max-width: 640px)').matches;
+
+      if(isMobile){
+        // Use native horizontal scroll + scroll-snap on mobile; no auto-scroll
+        wrap.querySelectorAll('.slide').forEach(s=>s.style.scrollSnapAlign='center');
+        return;
+      }
+
+      // Desktop: create continuous auto-scroll
+      slidesEl.innerHTML += slidesEl.innerHTML;
+      let pos = 0;
+      const speed = 0.35; // px per frame; tuned for readability
+      let rafId;
+      function step(){
+        pos += speed;
+        if(pos >= slidesEl.scrollWidth/2) pos = 0;
+        slidesEl.style.transform = `translateX(${-pos}px)`;
+        rafId = requestAnimationFrame(step);
+      }
+      slidesEl.style.willChange = 'transform';
+      step();
+
+      // Pause on hover for desktop
+      wrap.addEventListener('mouseenter', ()=> cancelAnimationFrame(rafId));
+      wrap.addEventListener('mouseleave', ()=> { rafId = requestAnimationFrame(step); });
+      // Re-evaluate on resize (switch behavior)
+      window.addEventListener('resize', ()=> location.reload());
+    })();
+  </script>
+</body>
+</html>
